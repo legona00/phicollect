@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Phi Iota Alpha Standards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <base target="_top">
+	<!--INCLUDE REQUIRED EXTERNAL JAVASCRIPT AND CSS LIBRARIES-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+  <?!= include('CSS'); ?><!--INCLUDE JavaScript.html FILE-->
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a><img src="https://drive.google.com/uc?export=view&id=10EfcC47V5RaGo_FWy94k3m5zTsSEr-oF"></a>
+        </nav>
+
+    <main>
+    <div class="info">
+        <p1><b>VP of Standards: Leo Gonzalez</b><br></p1>
+        <p2>&nbsp tamufiastandards@gmail.com<br>
+            &nbsp Venmo: @Leo-Gonzalez-89<br>
+            &nbsp CashApp: $LeoG2002
+    
+        </p2>
+    </div>
+
+    <div class="text-box">
+        <h1>Welcome to Standards</h1>
+        <p>Each brother has 5 excuses per semester. Sanction amounts are decided during meetings and 
+            are enforced when a member does not fulfill an obligation
+        </p>
+        <a href="https://forms.gle/s3ngJS6gSFcXcbA37" target="_blank" class="hero-btn">Submit an excuse 24 hrs before an event</a>
+
+    </div>
+
+
+    </section>
+  
+    <!--------Sanction Leaderboard-------->
+    
+        <section class="sanctions">
+            <h1>Sanctions Leaderboard</h1>
+            <p>Here are the updated totals for sanctions owed and remaining excuses for each brother</p>
+            <table>
+              <!-----First create the headers---->
+              <tr style="background-color:#ffffe0">
+                <th>Brother</th><th>Balance</th><th>Excuses</th>
+              </tr>
+              <?var tableData = getData();?>
+              <?for(var i=0; i <tableData.length;i++) {?>
+                <tr>
+                  <? for(var j=0; j<tableData[i].length;j++) { ?>  
+                  
+                    <? if(j==0){ ?>
+                      <td style="width:200px"><?= tableData[i][j]?></td>
+                    <? } else if(j==1) { ?>
+                      <td style="background-color: #D6EEEE; width:100px"><?= tableData[i][j]?></td>
+                    <? } else { ?>
+                      <td style="width:100px"><?= tableData[i][j]?></td>
+                    <? } ?>
+                  <? } ?>
+                </tr>
+              <? } ?>
+            </table>
+            <p>**Sanctions updated weekly**</p>
+        </section>
+    </main>
+</body>
+</html>
