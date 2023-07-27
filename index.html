@@ -27,9 +27,9 @@
     <main>
     <div class="info">
         <p1><b>VP of Standards: Leo Gonzalez</b><br></p1>
-        <p2>&nbsp tamufiastandards@gmail.com<br>
-            &nbsp Venmo: @Leo-Gonzalez-89<br>
-            &nbsp CashApp: $LeoG2002
+        <p2>tamufiastandards@gmail.com<br>
+            Venmo: @Leo-Gonzalez-89<br>
+            CashApp: $LeoG2002
     
         </p2>
     </div>
@@ -39,7 +39,7 @@
         <p>Each brother has 5 excuses per semester. Sanction amounts are decided during meetings and 
             are enforced when a member does not fulfill an obligation
         </p>
-        <a href="https://forms.gle/s3ngJS6gSFcXcbA37" target="_blank" class="hero-btn">Submit an excuse 24 hrs before an event</a>
+        <a href="https://forms.gle/s3ngJS6gSFcXcbA37" target="_blank" class="hero-btn">Submit an excuse at least a day before an event</a>
 
     </div>
 
@@ -48,7 +48,7 @@
   
     <!--------Sanction Leaderboard-------->
     
-        <section class="sanctions">
+        <div class="sanctions">
             <h1>Sanctions Leaderboard</h1>
             <p>Here are the updated totals for sanctions owed and remaining excuses for each brother</p>
             <table>
@@ -56,7 +56,7 @@
               <tr style="background-color:#ffffe0">
                 <th>Brother</th><th>Balance</th><th>Excuses</th>
               </tr>
-              <?var tableData = getData();?>
+              <?let tableData = getData();?>
               <?for(var i=0; i <tableData.length;i++) {?>
                 <tr>
                   <? for(var j=0; j<tableData[i].length;j++) { ?>  
@@ -73,7 +73,7 @@
               <? } ?>
             </table>
             <p>**Sanctions updated weekly**</p>
-        </section>
+        </div>
     </main>
 </body>
 </html>
