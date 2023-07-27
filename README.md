@@ -6,4 +6,4 @@ Each brother has 5 excuses at the start of the semester. There is an excuse form
 Once that is checked, The program pulls the current sanction and excuse balance for each member. Once attendance for an event is submitted, those that have an unexcused absence will receive the specified sanction amount. The data is updated and the google sheet containing the information as well. All sanctions are live and reflected on the sanctions website.
 
 ## Google Apps Project: https://script.google.com/d/1AK4PpxEXnGklGK22J2z32rI4IvOHeAXD2f32u7y2D0XZyMgTaMP4c6Y6/edit?usp=sharing
-## Live deployment: https://script.google.com/macros/s/AKfycbyYo43uqoOt9NxHDcZYuoetcSfpSmuiGcZJEcUCy9a_J8c4U-tDaer61Iwb13aCm7x3/exec
+## Live deployment: https://script.google.com/macros/s/AKfycbyC6ylKgK1elfwvBOVkYP-tH5SqfFSRBEWM0EOFMN_g9LTs2boDn_jtSVYhXeXuwjZy/exec
