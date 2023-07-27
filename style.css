@@ -58,7 +58,8 @@ nav img{
 }
 .info p2{
     text-align: left;
-    color: navy;
+    color: rgb(112, 112, 191);
+    font-weight: bolder;
 }
 
 .text-box{
