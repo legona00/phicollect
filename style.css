@@ -1,4 +1,11 @@
 <style>
+/* FOR DEBUGGING 
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+*/
 *{
     margin: 0;
     padding: 0;
@@ -69,6 +76,7 @@ nav img{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-top: 10%;
 }
 .text-box h1{
     font-size: 60px;
@@ -150,6 +158,7 @@ nav .fa{
 /* SANCTION LEADERBOARD */
 .sanctions{
     text-align: center;
+    align-items: center;
     padding-top: 50px;
 }
 h1{
@@ -164,8 +173,9 @@ p{
     padding: 10px;
 }
 table, th, td{
+  margin-left:auto;
+  margin-right:auto;
   border:1px solid black;
-  margin-left:600px;
 }
 
 </style>
